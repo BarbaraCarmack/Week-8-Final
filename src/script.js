@@ -22,20 +22,22 @@ function formatDate(timestamp)  {
     
     forecastHTML =
       forecastHTML +
-      `<div class ="col-2">
-        <div class="weather-forecast-date">${day}&dt;
+      ` <div class ="col-2">
+          <div class="weather-forecast-date">${day}&dt;
           <img 
             src="http://openweathermap.org/img/wn/50d@2x.png"
             alt=""
             width="42"
           />
-          <div class="weather-forecast-temperature">
+            <div class="weather-forecast-temperature">
             <span 
               class="weather-forecast-temperature-max">${Math.round(forecastDay.temp.max)}18° </span>
             <span 
               class="weather-forecast-temperature-min">${Math.round (forecastDay.temp.min)}12° </span>
+            </div>
           </div>
         </div>
+      
         `;
           
     });
